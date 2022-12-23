@@ -1,66 +1,85 @@
 html, body {
-    min-height: 100vh;
-  }
-  
-  body {
-    background-color: #afc5f2;
-    padding-top: 130px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .bg-light {
-    background-color: #7d7dec;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    margin: auto;
-    width: 48%;
-  }
-  .button_add {
-    width: 100%;
-  }
-  .card-header {
-    padding: 2%;
-  }
- .taskList {
-    background-color: #7d7dec;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    margin: 1% auto;
-    width: 48%;
- }
- .task-item__buttons {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #afc5f2;
+  padding-top: 130px;
   display: flex;
-  column-gap: 5px;
-}
-.taskBlock {
-  background-color: #7d7dec;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    margin: 1% auto;
-    width: 48%;
-}
-.none {
-  display: none !important;
-}
-.btn-action img {
-  pointer-events: none;
-}
-.task-title--done {
-  text-decoration: line-through;
-  color: #CDCDCD;
-}
-.list-group-item {
-  display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: space-between;
 }
+.bg-light {
+  background-color: #7d7dec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  margin: auto;
+  width: 48%;
+  border-radius: 4px;
+}
+.button_add {
+  width: 100%;
+}
+.card-header {
+  padding: 2%;
+}
+.taskList {
+  background-color: #7d7dec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  margin: 1% auto;
+  width: 48%;
+}
 .task-item__buttons {
-  margin-left: 10px;
+display: flex;
+column-gap: 5px;
+margin-bottom: 4%;
+}
+.taskBlock {
+background-color: #7d7dec;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 5%;
+margin: 1% auto;
+width: 48%;
+border-radius: 4px;
+}
+.none {
+display: none !important;
+}
+.btn-action img {
+pointer-events: none;
+}
+.task-title--done {
+text-decoration: line-through;
+color: #CDCDCD;
+}
+.list-group-item {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+.task-item__buttons {
+margin-left: 10px;
+}
+#buttom_done {
+background-color:lightgreen;
+border: none;
+padding: 0% 10%;
+border-radius: 2px;
+}
+#buttom_del {
+background-color:indianred;
+border: none;
+padding: 0% 20%;
+border-radius: 2px;
+}
+#tasksList {
+margin: 0px;
+padding: 0px;
 }

@@ -16,11 +16,11 @@ tasks.forEach(function (task) {
     const taskHTML = `<li id="${task.id}" class="list-group-item d-flex justify-content-between task-item">
     <span class="${cssClass}">${task.text}</span>
     <div class="task-item__buttons">
-        <button type="button" data-action="done" class="btn-action">
-            <img src="./img/tick.svg" alt="Done" width="18" height="18">
+        <button id="buttom_done" type="button" data-action="done" class="btn-action">
+           done
         </button>
-        <button type="button" data-action="delete" class="btn-action">
-            <img src="./img/cross.svg" alt="Done" width="18" height="18">
+        <button id="buttom_del" type="button" data-action="delete" class="btn-action">
+           del
         </button>
     </div>
     </li>`;
@@ -62,7 +62,6 @@ function addTask(event) {
 
     saveToLocalStorage();
     
-    // const a = condition ? if true : if false; // example ternarniy operator
     
     // create css class
     const cssClass = newTask.done ? 'task-title task-title--done' : 'task-title';
@@ -71,11 +70,11 @@ function addTask(event) {
     const taskHTML = `<li id="${newTask.id}" class="list-group-item d-flex justify-content-between task-item">
     <span class="${cssClass}">${newTask.text}</span>
     <div class="task-item__buttons">
-        <button type="button" data-action="done" class="btn-action">
-            <img src="./img/tick.svg" alt="Done" width="18" height="18">
+        <button id="buttom_done" type="button" data-action="done" class="btn-action">
+           done
         </button>
-        <button type="button" data-action="delete" class="btn-action">
-            <img src="./img/cross.svg" alt="Done" width="18" height="18">
+        <button id="buttom_del" type="button" data-action="delete" class="btn-action">
+            del
         </button>
     </div>
     </li>`;
@@ -88,11 +87,7 @@ function addTask(event) {
     taskInput.focus()
 
     checkEmptyList();
-
-    /* // hiding text 'no task'
-    if (tasksList.children.length > 1) { // checking langth of child elements
-        emptyList.classList.add('none') // class none add to css
-    }   */      
+  
 }
 
 function deleteTask(event) {
@@ -122,12 +117,6 @@ function deleteTask(event) {
 
     checkEmptyList();
 
-    /* // remove class none n make el visible
-    if (tasksList.children.length === 1) { // !Q checking length of child elements
-        emptyList.classList.remove('none') 
-    }    */
-    
-    
 }    
 
 function doneTask(event) {
