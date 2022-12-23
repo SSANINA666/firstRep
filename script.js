@@ -17,10 +17,10 @@ tasks.forEach(function (task) {
     <span class="${cssClass}">${task.text}</span>
     <div class="task-item__buttons">
         <button id="buttom_done" type="button" data-action="done" class="btn-action">
-           done
+            &#10004;
         </button>
         <button id="buttom_del" type="button" data-action="delete" class="btn-action">
-           del
+            &#10008;
         </button>
     </div>
     </li>`;
@@ -71,10 +71,10 @@ function addTask(event) {
     <span class="${cssClass}">${newTask.text}</span>
     <div class="task-item__buttons">
         <button id="buttom_done" type="button" data-action="done" class="btn-action">
-           done
+            &#10004;
         </button>
         <button id="buttom_del" type="button" data-action="delete" class="btn-action">
-            del
+            &#10008;
         </button>
     </div>
     </li>`;
